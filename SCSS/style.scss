@@ -1,0 +1,244 @@
+
+$bg-header: #E1E0DA;
+$amarelo: #FFD114;
+$vermelho: #FD1314;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Medium.woff') format('woff2'),
+        url('../fonts/Gotham-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+body{
+    background: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+    width: 100%;
+    height: 1897px;
+    margin:0;
+    padding:0;
+}
+
+header{
+    background-color: $bg-header;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        .logo{
+
+        }
+    }
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    .heading{
+        display: flex;
+        max-width: 967px;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 85px;
+        h2, h3{
+            font-family: 'Gotham';
+            text-transform: uppercase;
+            text-align: center;
+            margin:0;
+            font-size: 1.5em;
+        }
+        h2{
+            color: #fff;
+        }
+        h3{
+            color: $amarelo;
+            margin-top: 5px;
+        }
+    }
+
+    .diad{
+        figure{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            img{
+
+            }
+            figcaption{
+                color: #fff;
+                position: absolute;
+                bottom: 50px;
+                font-weight: 900;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    .content-buttons{
+        position: relative;
+        top: -40px;
+        display: flex;
+        max-width: 853px;
+        justify-content: center;
+        flex-wrap: wrap;
+        .btn-red{
+           height: 55px;
+           width: 275px;
+           background-color: $vermelho;
+           color: #fff;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin:10px 4px;
+           text-decoration: none;
+           text-transform: uppercase;
+           font-family: 'Gotham';
+           font-family: 'Roboto', sans-serif;
+           border-radius: 7px;
+           box-shadow: 0px 2px 2px 1px rgba(9, 9,9, 0.8);
+        }
+    }
+
+
+    .letras-pequenas{
+        display: flex;
+        max-width: 900px;
+        p{
+            font-size:9px;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            text-align: center
+        }
+    }
+
+    .regulamento{
+        margin-top: 20px;
+        a{
+            width: 240px;
+            height: 50px;
+            border:2px solid #fff;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+    }
+
+    .social{
+        margin-top: 20px;
+        display: flex;
+        width:240px;
+        justify-content: space-evenly;
+        a{
+
+        }
+    }
+}
+
+
+
+
+
+/*Resposivo*/
+
+@media (max-width: 996px) {
+
+    .conteudo{
+        .heading{
+            padding:0 20px;
+        }
+
+        .carro-content{
+            img{
+                max-width: 100%;
+            }
+        }
+
+        .diad{
+            figure{
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .letras-pequenas{
+            p{
+                padding:0 20px;
+            }
+        }
+    }
+    
+
+}
+
+
+@media (max-width: 600px) {
+    body{
+        height: 1530px;
+    }
+    .conteudo .diad figure figcaption{
+        bottom: 50px;   
+    }
+    .conteudo .content-buttons{
+      
+        .btn-red {
+            height: 50px;
+            width: 45%;
+        }
+    }
+    
+}
+
+@media (max-width: 500px) {
+    body{
+        height: 1450px;
+    }
+    .conteudo .diad figure figcaption{
+        bottom: -10px;   
+        text-align: center;
+    }
+    .conteudo .content-buttons{
+        top: 0;
+        .btn-red {
+            height: 50px;
+            width: 45%;
+        }
+    }
+    
+}
+
+@media (max-width: 400px) {
+    body{
+        height: 1390px;
+    }
+    .conteudo .diad figure figcaption{
+        bottom: -10px;   
+        text-align: center;
+    }
+    .conteudo .content-buttons{
+        top: 0;
+        .btn-red {
+            top: 0;
+            height: 50px;
+            width: 80%;
+        }
+    }
+    
+}

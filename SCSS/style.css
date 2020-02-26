@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/Gotham-Medium.woff") format("woff2"), url("../fonts/Gotham-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  background: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 1897px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #E1E0DA;
+  height: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.conteudo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.conteudo .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 967px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 85px;
+}
+
+.conteudo .heading h2, .conteudo .heading h3 {
+  font-family: 'Gotham';
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.conteudo .heading h2 {
+  color: #fff;
+}
+
+.conteudo .heading h3 {
+  color: #FFD114;
+  margin-top: 5px;
+}
+
+.conteudo .diad figure {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conteudo .diad figure figcaption {
+  color: #fff;
+  position: absolute;
+  bottom: 50px;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+}
+
+.conteudo .content-buttons {
+  position: relative;
+  top: -40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 853px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.conteudo .content-buttons .btn-red {
+  height: 55px;
+  width: 275px;
+  background-color: #FD1314;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Gotham';
+  font-family: 'Roboto', sans-serif;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 2px 2px 1px rgba(9, 9, 9, 0.8);
+          box-shadow: 0px 2px 2px 1px rgba(9, 9, 9, 0.8);
+}
+
+.conteudo .letras-pequenas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 900px;
+}
+
+.conteudo .letras-pequenas p {
+  font-size: 9px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.conteudo .regulamento {
+  margin-top: 20px;
+}
+
+.conteudo .regulamento a {
+  width: 240px;
+  height: 50px;
+  border: 2px solid #fff;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.conteudo .social {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 240px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+/*Resposivo*/
+@media (max-width: 996px) {
+  .conteudo .heading {
+    padding: 0 20px;
+  }
+  .conteudo .carro-content img {
+    max-width: 100%;
+  }
+  .conteudo .diad figure img {
+    max-width: 100%;
+  }
+  .conteudo .letras-pequenas p {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    height: 1530px;
+  }
+  .conteudo .diad figure figcaption {
+    bottom: 50px;
+  }
+  .conteudo .content-buttons .btn-red {
+    height: 50px;
+    width: 45%;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    height: 1450px;
+  }
+  .conteudo .diad figure figcaption {
+    bottom: -10px;
+    text-align: center;
+  }
+  .conteudo .content-buttons {
+    top: 0;
+  }
+  .conteudo .content-buttons .btn-red {
+    height: 50px;
+    width: 45%;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    height: 1390px;
+  }
+  .conteudo .diad figure figcaption {
+    bottom: -10px;
+    text-align: center;
+  }
+  .conteudo .content-buttons {
+    top: 0;
+  }
+  .conteudo .content-buttons .btn-red {
+    top: 0;
+    height: 50px;
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
